@@ -1,0 +1,29 @@
+# GitHub Repository Setup Commands
+# Run these commands after creating the repository on GitHub.com
+
+# Step 1: Add GitHub repository as remote origin
+# Replace YOUR_USERNAME and REPO_NAME with your actual values
+git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+
+# Step 2: Rename branch to main (modern Git standard)
+git branch -M main
+
+# Step 3: Push your code to GitHub
+git push -u origin main
+
+# Alternative if you get authentication errors:
+# Use Personal Access Token instead of password
+# Go to GitHub → Settings → Developer Settings → Personal Access Tokens
+# Generate new token with 'repo' permissions
+# Use token as password when prompted
+
+# Verify remote connection
+git remote -v
+
+# Check if push was successful
+git log --oneline
+
+# Example with actual repository name:
+# git remote add origin https://github.com/yourusername/opticare24.git
+# git branch -M main  
+# git push -u origin main
